@@ -87,6 +87,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background-color: var(--backgroundprimary-clr);
   border: 1px solid;
   padding: 5px;
@@ -95,31 +96,30 @@ body {
   width: 90%;
   max-width: 500px;
   margin: 1em auto;
-
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
   align-items: left;
+
+  gap: 1em;
   max-width: 450px
 }
 
 .form__input {
   border: 2px solid black;
   padding: 0.2em;
-
 }
 
 .form__btn {
   width: 13em;
-  background-color: black;
-  color: white;
-  margin: 0 auto;
   padding: 0.5em;
   margin-bottom: 1em;
 
+  background-color: black;
+  color: white;
+  margin: 0 auto;
 }
 
 /* ------------------------ Body Section: Fase 2 ---------------------------- */
@@ -130,6 +130,7 @@ body {
 
 .keyboard input[type='button'] {
   padding: 0.6em 0.5em;
+
   gap: 1em;
   border: 3px solid #202c2b;
   background: black;
@@ -140,9 +141,11 @@ body {
 /* ------------------------ Body Section: Fase 2  ---------------------------- */
 
 .game_container {
-  display: flex;
+ /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
+  display: none;
+
   background-color: var(--backgroundprimary-clr);
   border: 1px solid;
   padding: 5px;
@@ -151,8 +154,6 @@ body {
   width: 90%;
   max-width: 500px;
   margin: 1em auto;
-  display: none;
-
 }
 
 .title_container {
@@ -163,7 +164,6 @@ body {
   width: 90%;
   max-width: 500px;
   margin: 1em auto;
-
 }
 
 .title_game {
@@ -176,10 +176,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   width: 90%;
   max-width: 500px;
   max-height: fit-content;
-
 }
 
 .img_main_container {
@@ -188,33 +188,35 @@ body {
 }
 
 .space_guess_letter {
-  outline: 1px solid green;
-  font-size: 3em;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
-  margin: 1em auto;
+  margin-left: .8em;
   text-align: center;
   letter-spacing: 0.3em;
 
+  outline: 1px solid black;
+  font-size: 3em;
 }
 
 /* ------------------------ Aside Section  ---------------------------- */
 
 #aside_section {
+  padding: 5px;
+  max-height: fit-content;
+
   background-color: var(--backgroundprimary-clr);
   border: 1px solid;
-  padding: 5px;
   box-shadow: 5px 7px var(--backgroundbox-clr);
-  max-height: fit-content;
   padding: auto;
 }
 
 .aside_title {
+  display: flex;
+  justify-content: center;
+
   margin-top: 0.3em;
   font-size: 1.2em;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
 }
 
 .aside_list {

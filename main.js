@@ -18,9 +18,7 @@ let homeContainer = document.querySelector('.form_container')
 let gameContainer = document.querySelector(".game_container")
 let spaceGuessLetter = document.querySelector(".space_guess_letter")
 
-
-
-
+let key = document.querySelectorAll('input[type="button"]');
 
 
 btn.addEventListener('click', addUserName);
@@ -65,8 +63,16 @@ function addUserName() {
         letter = "_"
         console.log(letter)
         spaceGuessLetter.textContent += letter
-    })
+    });
+}
 
-
+switch (wordsplited) {
+    case 0:
+        spaceGuessLetter.textContent == key.value;
+        break;
+    
+    case 1:
+        spaceGuessLetter.textContent !== key.value;
+        alert('error');
 }
 
