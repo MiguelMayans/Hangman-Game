@@ -68,7 +68,6 @@ body {
 }
 
 .form_container {
-
   display: flex;
   flex-direction: column;
   max-width: 450px;
@@ -76,7 +75,6 @@ body {
   align-items: center;
 
 }
-
 
 .form {
   display: flex;
@@ -124,7 +122,6 @@ body {
     padding: 5px;
     box-shadow: 5px 7px var(--backgroundbox-clr);
     max-height: fit-content;
-    padding: auto;
   }
 
   .aside_title {
