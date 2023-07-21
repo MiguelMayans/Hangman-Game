@@ -18,7 +18,14 @@ let homeContainer = document.querySelector('.form_container')
 let gameContainer = document.querySelector(".game_container")
 let spaceGuessLetter = document.querySelector(".space_guess_letter")
 
-let key = document.querySelectorAll('input[type="button"]');
+// Asginamos valor a cada tecla pulsada
+let keys = document.querySelectorAll('input[type="button"]');
+keys.forEach((key) => {
+    key.addEventListener("click", (event) => {
+        let selectedKey = event.target.value
+        console.log(selectedKey)
+    });
+})
 
 
 btn.addEventListener('click', addUserName);
@@ -64,13 +71,15 @@ function addUserName() {
         console.log(letter)
         spaceGuessLetter.textContent += letter
     });
+
+
 }
 
 switch (wordsplited) {
     case 0:
         spaceGuessLetter.textContent == key.value;
         break;
-    
+
     case 1:
         spaceGuessLetter.textContent !== key.value;
         alert('error');
