@@ -53,7 +53,7 @@ RECORDATORIO: Versión oficial Iphone 12 (iOS 14) // 390px - 844px
   font-family: 'Roboto', sans-serif;
 }
 
-/* ------------------------ Body Section  ---------------------------- */
+/* ------------------------ Body Section: Fase 1  ---------------------------- */
 
 body {
   background-color: var(--backgroundwhite-clr);
@@ -107,6 +107,21 @@ body {
 
 }
 
+/* ------------------------ Body Section: Fase 2 ---------------------------- */
+.keyboard .row {
+  text-align: center;
+  margin: 1em auto
+}
+
+.keyboard input[type='button'] {
+  padding: 0.5em 0.75em;
+  gap: 1em;
+  border: 3px solid #202c2b;
+  background: black;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 /* ------------------------ Main Section  ---------------------------- */
 
 main #aside_section {
@@ -124,14 +139,14 @@ body {
 
 /* ------------------------ Aside Section  ---------------------------- */
 
-  #aside_section {
-    background-color: var(--backgroundprimary-clr);
-    border: 1px solid;
-    padding: 5px;
-    box-shadow: 5px 7px var(--backgroundbox-clr);
-    max-height: fit-content;
-    padding: auto;
-  }
+#aside_section {
+  background-color: var(--backgroundprimary-clr);
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 5px 7px var(--backgroundbox-clr);
+  max-height: fit-content;
+  padding: auto;
+}
 
 .aside_title {
   outline: 1px solid green;
