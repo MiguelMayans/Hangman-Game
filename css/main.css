@@ -1,0 +1,59 @@
+/*
+### Normativa ###
+* @media "querie" siempre al final del documento CSS
+* No utilizar "margin", solo si es extremadamente necesario
+* No utilizar "px", utilizar: "em", "rem".
+    - width: vw;
+    - height: vh;
+    - margin / padding: rem; em;
+    - line height: rem; em;
+. Cada uno responsable de su parte (no intromision)
+. ';' -> Poner siempre
+. Antes de finalizar una sección, presentar a equipo**
+. Utilizar mismas dimensiones (ancho pantalla)
+. Utilizar mismas unidades de medida (em)
+. Utilizar 'outline' en cada seccion para visualizar estructura contenido. (NO CUESTA NADA)
+. Fuente proyecto: font-family: 'Roboto', sans-serif;
+.Fuente proyecto: font-family: 'Roboto Condensed', sans-serif;
+  . Colores a través de ROOT
+. Look & feel (Combinación NEGRO - BLANCO)
+. Añadir un comentario en cada sección / apartado
+
+RECORDATORIO: Versión oficial Iphone 12 (iOS 14) // 390px - 844px
+
+*/
+
+/* ---------------------- Import section -------------------------- */
+
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ------------------------- Root ---------------------------------- */
+
+:root {
+  --backgroundprimary-clr: rgb(255, 255, 255);
+}
+
+/*
+  var(--backgroundprimary-clr);
+*/
+
+/* ------------------------- Generic Section ------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ------------------------ Body Section  ---------------------------- */
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--backgroundwhite-clr);
+    width: 100vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    
+  }
