@@ -93,9 +93,3 @@ switch (wordsplited) {
         spaceGuessLetter.textContent !== key.value;
         alert('error');
 }
-
-/* No esta funcionando el boton del teclado => Otra prueba 
-key.addEventListener('click', () => {
-    alert('Buenos días');
-});
-*/ 
