@@ -14,6 +14,7 @@ ul.appendChild(newElement);*/
 let btn = document.querySelector('.form__btn');
 let input = document.querySelector('.form__input');
 let userList = document.querySelector('#users_li');
+let homeContainer = document.querySelector('.form_container')
 
 
 btn.addEventListener('click', addUserName);
@@ -38,4 +39,6 @@ function addUserName() {
     newElement.textContent = myObject.name;
     userList.appendChild(newElement);
 
+    /* display form__container */
+    homeContainer.style.display = 'none';
 }
