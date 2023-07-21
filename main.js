@@ -18,13 +18,7 @@ let homeContainer = document.querySelector('.form_container')
 let gameContainer = document.querySelector(".game_container")
 let spaceGuessLetter = document.querySelector(".space_guess_letter")
 
-/*let Q = document.querySelector("#button_q");
-let O = document.querySelector("#button_o");
-*/
-
-/* No funciona */
 let key = document.querySelectorAll('input[type="button"]');
-console.log(key);
 
 
 btn.addEventListener('click', addUserName);
@@ -82,28 +76,23 @@ let wordsplited = wordSelected.split("");
 console.log(wordSelected)
 console.log(wordsplited)
 
-// Convertimos cada letra en guión bajo y lo añadimos al espacio
-wordsplited.forEach((letter) => {
-    letter = "_"
-    console.log(letter)
-    spaceGuessLetter.textContent += letter
-});
+    // Convertimos cada letra en guión bajo y lo añadimos al espacio
+    wordsplited.forEach((letter) => {
+        letter = "_"
+        console.log(letter)
+        spaceGuessLetter.textContent += letter
+    });
+}
 
-/*
-Q.addEventListener('click', () => {
-    for(let i = 0; i < wordsplited.length; ++i) {
-        if(Q.value == wordsplited[i]) alert('OK');
-        else alert ('NOT OK');
-    }
-});
-
-O.addEventListener('click', () => {
-    for(let i = 0; i < wordsplited.length; ++i) {
-        if(O.value == wordsplited[i]) alert('OK');
-        else alert ('NOT OK');
-    }
-});
-*/
+switch (wordsplited) {
+    case 0:
+        spaceGuessLetter.textContent == key.value;
+        break;
+    
+    case 1:
+        spaceGuessLetter.textContent !== key.value;
+        alert('error');
+}
 
 /* No esta funcionando el boton del teclado => Otra prueba 
 key.addEventListener('click', () => {
