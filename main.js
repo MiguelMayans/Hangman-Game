@@ -16,6 +16,11 @@ let input = document.querySelector('.form__input');
 let userList = document.querySelector('#users_li');
 let homeContainer = document.querySelector('.form_container')
 let gameContainer = document.querySelector(".game_container")
+let spaceGuessLetter = document.querySelector(".space_guess_letter")
+
+
+
+
 
 
 btn.addEventListener('click', addUserName);
@@ -43,4 +48,25 @@ function addUserName() {
     /* display form__container */
     homeContainer.style.display = 'none';
     gameContainer.style.display = "block";
+
+    // Definir string de 4 letras
+    let fourLetterString = ["oído", "oyes", "oyen", "ovni", "ovil", "ovar", "oval", "otro"]
+    console.log(fourLetterString)
+
+    //Elegimos una palabra random y la dividimos en letras
+    let wordSelected = fourLetterString[Math.floor((Math.random() * fourLetterString.length))];
+    let wordsplited = wordSelected.split("");
+
+    console.log(wordSelected)
+    console.log(wordsplited)
+
+    // Convertimos cada letra en guión bajo y lo añadimos al espacio
+    wordsplited.forEach((letter) => {
+        letter = "_"
+        console.log(letter)
+        spaceGuessLetter.textContent += letter
+    })
+
+
 }
+
