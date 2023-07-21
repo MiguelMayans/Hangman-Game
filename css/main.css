@@ -62,7 +62,7 @@ body {
 
 .title {
   font-size: 1.5rem;
-  padding: 2em;
+  padding: 1.5em;
   font-weight: bold;
 
 }
@@ -71,9 +71,16 @@ body {
 
   display: flex;
   flex-direction: column;
-  max-width: 450px;
   justify-content: center;
   align-items: center;
+  background-color: var(--backgroundprimary-clr);
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 5px 7px var(--backgroundbox-clr);
+  max-height: fit-content;
+  width: 90%;
+  max-width: 500px;
+  margin: 1em auto;
 
 }
 
@@ -98,52 +105,51 @@ body {
   color: white;
   margin: 0 auto;
   padding: 0.5em;
+  margin-bottom: 1em;
 
 }
 
-  /* ------------------------ Main Section  ---------------------------- */
-  
-  main #aside_section {
-    width: 90%;
-    max-width: 500px;
-    margin: 2em auto;
-  }
+/* ------------------------ Main Section  ---------------------------- */
 
-  /* ------------------------ Body Section  ---------------------------- */
-  
-  body {
-    font-family: sans-serif;
-    background-color: var(--backgroundsecundary-clr);
-  }
+main #aside_section {
+  width: 90%;
+  max-width: 500px;
+  margin: 2em auto;
+}
 
-  /* ------------------------ Aside Section  ---------------------------- */
+/* ------------------------ Body Section  ---------------------------- */
 
-  #aside_section {
-    background-color: var(--backgroundprimary-clr);
-    border: 1px solid;
-    padding: 5px;
-    box-shadow: 5px 7px var(--backgroundbox-clr);
-    max-height: fit-content;
-    padding: auto;
-  }
+body {
+  font-family: sans-serif;
+  background-color: var(--backgroundsecundary-clr);
+}
 
-  .aside_title {
-    outline: 1px solid green;
-    margin-top: 0.3em;
-    font-size: 1.2em;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-  }
+/* ------------------------ Aside Section  ---------------------------- */
 
-  .aside_list {
-    padding: 0.5em;
-    font-size: 1.1em;
-    line-height: 1.8em;
-  }
+#aside_section {
+  background-color: var(--backgroundprimary-clr);
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 5px 7px var(--backgroundbox-clr);
+  max-height: fit-content;
 
-  /* ------------------------ Media query  ---------------------------- */
+}
 
-  @media screen and (max-width: 480px) {
-    
-  }
+.aside_title {
+  outline: 1px solid green;
+  margin-top: 0.3em;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.aside_list {
+  padding: 0.5em;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+/* ------------------------ Media query  ---------------------------- */
+
+@media screen and (max-width: 480px) {}
