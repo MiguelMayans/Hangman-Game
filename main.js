@@ -15,28 +15,8 @@ let btn = document.querySelector('.form__btn');
 let input = document.querySelector('.form__input');
 let userList = document.querySelector('#users_li');
 let homeContainer = document.querySelector('.form_container')
+let gameContainer = document.querySelector(".game_container")
 
-
-// Adding keyboard //
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-    'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-    't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-// create alphabet ul
-var buttons = function () {
-    let myButtons = document.querySelector('.keyboard');
-    let letters = document.createElement('ul');
-
-    for (var i = 0; i < alphabet.length; i++) {
-        letters.id = 'alphabet';
-        list = document.createElement('li');
-        list.id = 'letter';
-        list.innerHTML = alphabet[i];
-        check();
-        myButtons.appendChild(letters);
-        letters.appendChild(list);
-    }
-}
 
 btn.addEventListener('click', addUserName);
 let myArray = []; /* Dentro de la array tienen que ir objetos */
@@ -62,4 +42,5 @@ function addUserName() {
 
     /* display form__container */
     homeContainer.style.display = 'none';
+    gameContainer.style.display = "block";
 }

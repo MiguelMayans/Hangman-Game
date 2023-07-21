@@ -151,6 +151,7 @@ body {
   width: 90%;
   max-width: 500px;
   margin: 1em auto;
+  display: none;
 
 }
 
@@ -205,7 +206,6 @@ body {
 }
 
 .aside_title {
-  outline: 1px solid green;
   margin-top: 0.3em;
   font-size: 1.2em;
   font-weight: bold;
