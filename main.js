@@ -75,7 +75,7 @@ function addUserName() {
 
 }
 
-switch (wordsplited) {
+/*switch (wordsplited) {
     case 0:
         spaceGuessLetter.textContent == key.value;
         break;
@@ -84,4 +84,4 @@ switch (wordsplited) {
         spaceGuessLetter.textContent !== key.value;
         alert('error');
 }
-
+*/
