@@ -53,14 +53,29 @@ RECORDATORIO: Versión oficial Iphone 12 (iOS 14) // 390px - 844px
   font-family: 'Roboto', sans-serif;
 }
 
+/* ------------------------ Main Section  ---------------------------- */
+
+main #aside_section {
+  width: 90%;
+  max-width: 500px;
+  margin: 2em auto;
+}
+
 /* ------------------------ Body Section  ---------------------------- */
+
+body {
+  font-family: sans-serif;
+  background-color: var(--backgroundsecundary-clr);
+}
+
+/* ------------------------ Body Section: Fase 1  ---------------------------- */
 
 body {
   background-color: var(--backgroundwhite-clr);
   width: 100vw;
 }
 
-.title {
+.title_form {
   font-size: 1.5rem;
   padding: 1.5em;
   font-weight: bold;
@@ -107,19 +122,63 @@ body {
 
 }
 
-/* ------------------------ Main Section  ---------------------------- */
+/* ------------------------ Body Section: Fase 2  ---------------------------- */
 
-main #aside_section {
+.game_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--backgroundprimary-clr);
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 5px 7px var(--backgroundbox-clr);
+  max-height: fit-content;
   width: 90%;
   max-width: 500px;
-  margin: 2em auto;
+  margin: 1em auto;
+
 }
 
-/* ------------------------ Body Section  ---------------------------- */
+.title_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+  width: 90%;
+  max-width: 500px;
+  margin: 1em auto;
+  
+}
+.title_game {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
-body {
-  font-family: sans-serif;
-  background-color: var(--backgroundsecundary-clr);
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  outline: 1px solid red;
+  width: 90%;
+  max-width: 500px;
+  max-height: fit-content;
+  
+}
+
+.img_main_container {
+  outline: 1px solid purple;
+  width: 75%;
+  max-width: 500px;
+}
+
+.space_guess_letter {
+  outline: 1px solid green;
+  width: 90%;
+  max-width: 500px;
+  margin: 1em auto;
 }
 
 /* ------------------------ Aside Section  ---------------------------- */
@@ -133,21 +192,23 @@ body {
     padding: auto;
   }
 
-.aside_title {
+  .aside_title {
   outline: 1px solid green;
   margin-top: 0.3em;
   font-size: 1.2em;
   font-weight: bold;
   display: flex;
   justify-content: center;
-}
+  }
 
-.aside_list {
+  .aside_list {
   padding: 0.5em;
   font-size: 1.1em;
   line-height: 1.8em;
-}
+  }
 
 /* ------------------------ Media query  ---------------------------- */
 
-@media screen and (max-width: 480px) {}
+@media screen and (min-width: 480px) {
+
+}
