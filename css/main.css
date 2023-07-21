@@ -34,14 +34,19 @@ RECORDATORIO: Versión oficial Iphone 12 (iOS 14) // 390px - 844px
 
 :root {
   --backgroundprimary-clr: rgb(255, 255, 255);
+  --backgroundsecundary-clr: rgb(234, 222, 222);
+  --backgroundbox-clr: #989494;
 }
 
 /*
   var(--backgroundprimary-clr);
+  var(--backgroundsecundary-clr);
+  var(--backgroundbox-clr);
 */
 
 /* ------------------------- Generic Section ------------------------- */
 * {
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -70,7 +75,6 @@ body {
   justify-content: center;
   align-items: center;
 
-
 }
 
 
@@ -97,4 +101,49 @@ body {
 
 }
 
-@media screen and (min-width: 480px) {}
+  /* ------------------------ Main Section  ---------------------------- */
+  
+  main #aside_section {
+    width: 90%;
+    max-width: 500px;
+    margin: 2em auto;
+  }
+
+  /* ------------------------ Body Section  ---------------------------- */
+  
+  body {
+    font-family: sans-serif;
+    background-color: var(--backgroundsecundary-clr);
+  }
+
+  /* ------------------------ Aside Section  ---------------------------- */
+
+  #aside_section {
+    background-color: var(--backgroundprimary-clr);
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 7px var(--backgroundbox-clr);
+    max-height: fit-content;
+    padding: auto;
+  }
+
+  .aside_title {
+    outline: 1px solid green;
+    margin-top: 0.3em;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aside_list {
+    padding: 0.5em;
+    font-size: 1.1em;
+    line-height: 1.8em;
+  }
+
+  /* ------------------------ Media query  ---------------------------- */
+
+  @media screen and (max-width: 480px) {
+    
+  }
