@@ -23,7 +23,6 @@ lostGame.style.display = "none"
 
 let myArray = []; /* Dentro de la array tienen que ir objetos */
 
-
 btn.addEventListener('click', addUserName)
 // Creamos objeto 
 function addUserName() {
@@ -46,7 +45,6 @@ function addUserName() {
     homeContainer.style.display = 'none'
     gameContainer.style.display = "block"
 }
-
 
 // Definir string de 4 letras
 let fourLetterString = ["oído", "oyes", "oyen", "ovni", "ovil", "ovar", "oval", "otro"]
@@ -93,7 +91,6 @@ keys.forEach((key) => {
     key.addEventListener("click", (event) => {
         let selectedKey = event.target.value
         let letterFound = false;
-        console.log(selectedKey)
 
         for (let i = 0; i < wordsplited.length; ++i) {
 
@@ -103,8 +100,8 @@ keys.forEach((key) => {
                 rightCounter++
                 key.style.visibility = "hidden"
             }
-
         }
+
         if (!letterFound) {
             spaceGuessLetter.textContent = wordFound;
             wrongCounter++
@@ -127,7 +124,6 @@ keys.forEach((key) => {
             winGame.style.display = "block"
             userScore.style.display = "none"
         }
-
     });
 })
 
