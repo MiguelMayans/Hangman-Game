@@ -71,7 +71,7 @@ function addUserName() {
         letter = "_"
         spaceGuessLetter.textContent += letter
     });
-    
+
 
     // Esto es una prueba
     let keys = document.querySelectorAll('input[type="button"]')
@@ -80,15 +80,15 @@ function addUserName() {
         key.addEventListener("click", (event) => {
             let selectedKey = event.target.value
             console.log(selectedKey)
-            
-            for(let i = 0; i < wordsplited.length; ++i) {
-                
-                if(wordsplited[i].includes(selectedKey)) {
+
+            for (let i = 0; i < wordsplited.length; ++i) {
+
+                if (wordsplited[i].includes(selectedKey)) {
                     wordsplited[i] = selectedKey
-                    event.target.d
-    
+
+
                 } else if (!wordsplited[i].includes(selectedKey)) {
-                    wordsplited[i] = "_"   
+                    wordsplited[i] = "_"
                 }
             }
             spaceGuessLetter.textContent = wordsplited.join("")
