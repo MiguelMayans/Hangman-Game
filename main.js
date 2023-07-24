@@ -83,13 +83,15 @@ function addUserName() {
             
             for(let i = 0; i < wordsplited.length; ++i) {
                 
-                if(wordsplited[i] == selectedKey) {
-                    alert('OK')
-                    
-                } else {
-                    alert('NOT OK')
+                if(wordsplited[i].includes(selectedKey)) {
+                    wordsplited[i] = selectedKey
+                    event.target.d
+    
+                } else if (!wordsplited[i].includes(selectedKey)) {
+                    wordsplited[i] = "_"   
                 }
             }
+            spaceGuessLetter.textContent = wordsplited.join("")
         });
     })
 }
